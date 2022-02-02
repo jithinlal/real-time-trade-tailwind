@@ -4,13 +4,13 @@ import "firebase/compat/analytics";
 import "firebase/compat/performance";
 
 const config = {
-  apiKey: "AIzaSyANvPLTLY3cHrBL3qD4Sy2-WVVJH4qNI-k",
-  authDomain: "trade-app-fb3e7.firebaseapp.com",
-  projectId: "trade-app-fb3e7",
-  storageBucket: "trade-app-fb3e7.appspot.com",
-  messagingSenderId: "236128634014",
-  appId: "1:236128634014:web:f5a2632cb00bd44b3de78f",
-  measurementId: "G-W64XR510JN",
+  apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
 if (!firebase.apps.length) {
